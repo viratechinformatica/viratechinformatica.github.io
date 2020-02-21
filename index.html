@@ -1,19 +1,69 @@
-<html>
+ <!DOCTYPE html>
+  <html lang="pt-br">
     <head>
-            <!-- Compiled and minified CSS -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-            <!--Import Google Icon Font-->
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-            <!--Let browser know website is optimized for mobile-->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <title>Viratech Informática</title>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!-- Compiled and minified CSS -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <meta charset="utf-8">
+      <title>Viratech Informática</title>
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems, options);
+          });
+        
+          // Or with jQuery
+        
+          $(document).ready(function(){
+            $('.sidenav').sidenav();
+          });
+        </script>
+        <style>
+            body {
+                background: url(https://cdn.pixabay.com/photo/2017/01/18/16/46/hong-kong-1990268_960_720.jpg) no-repeat center top fixed;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+                }
+        </style>
     </head>
-    <body>
-      <p>Olá Mundo!</p>
-    </body>
-    <footer>
 
-    </footer>
+    <body>
+        <div class="container">
+            <nav class="transparent z-depth-0">
+                <div class="nav-wrapper transparent">
+                  <a href="#!" class="brand-logo">Viratech</a>
+                  <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                  <ul class="right hide-on-med-and-down">
+                    <li><a href="sass.html">Sobre</a></li>
+                    <li><a href="badges.html">Case</a></li>
+                    <li><a href="collapsible.html">Hospedagem</a></li>
+                    <li><a href="mobile.html">Contato</a></li>
+                  </ul>
+                </div>
+              </nav>
+            
+              <ul class="sidenav" id="mobile-demo">
+                <li><a href="sass.html">Sass</a></li>
+                <li><a href="badges.html">Components</a></li>
+                <li><a href="collapsible.html">Javascript</a></li>
+                <li><a href="mobile.html">Mobile</a></li>
+              </ul>
+                     
+            <section>
+
+            </section>
+            <footer>
+
+            </footer>
+        </div>
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-</html>
+    </body>
+  </html>
+        
